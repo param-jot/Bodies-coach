@@ -6,8 +6,12 @@ Bodies is an android application, using this user can easily schedule workout se
 3. Information, Schedules and availability of all coaches corresponding to the Gym.
 4. Using this application, no need to go anywhere, just use app and find gym, coach and schedule session according
 to your need.
+
 Technologies and Libraries used:
 Platform: Android
+
 UI/UX - Material Designing.
-APIs Integration.
+
+APIs Integration 
+
 GSON, Retrofit, Butterknife mainly
