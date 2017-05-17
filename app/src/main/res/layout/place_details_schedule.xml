@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:tint="@color/black"
+            android:id="@+id/clock_icon"
+            android:src="@drawable/schedule_icon_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Schedule"
+            android:layout_toRightOf="@+id/clock_icon"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:text="Close"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGreyBackground5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Timings"
+                android:textSize="16sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4:00am - Midnight"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/date_picker"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGreyBackground5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreyBackground16"
+        android:paddingBottom="3dp">
+
+        <com.github.channguyen.rsv.RangeSliderView
+            android:id="@+id/rsv_small"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-7dp"
+            android:layout_marginTop="-7dp"
+            rsv:emptyColor="@color/white"
+            rsv:filledColor="#13A4FB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rsv_small"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="30 min"
+                android:textSize="12sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1 hour"
+                android:textSize="12sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6 hours"
+                android:textSize="12sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12 hours"
+                android:textSize="12sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="later today"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+        android:layout_marginLeft="15dp"
+        android:text="10:30am"/>
+
+    <include layout="@layout/sessions_listing_card"/>
+    <include layout="@layout/sessions_listing_card"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+        android:layout_marginLeft="15dp"
+        android:text="11:30am"/>
+
+    <include layout="@layout/sessions_listing_card"/>
+    <include layout="@layout/sessions_listing_card"/>
+
+
+</LinearLayout>

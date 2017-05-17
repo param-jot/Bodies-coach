@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_gradient_2"/>
+
+       <ScrollView
+        android:scrollbars="none"
+      android:scrollbarStyle="insideOverlay"
+android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/custom_view_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@drawable/gradient_dashboard"
+                android:orientation="vertical"
+                android:paddingBottom="80dp">
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="@string/create_your"
+                    android:textColor="@color/white"
+                    android:textSize="47sp" />
+
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="left"
+                    android:text="@string/own_workout"
+                    android:textColor="@color/white"
+                    android:textSize="47sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="15dp"
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:text="@string/custom_head_text_1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/custom_head_text_2"
+                    android:textColor="@color/textBluish"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:text="@string/custom_head_text_3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/custom_head_text_4"
+                    android:textColor="@color/textBluish"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/trapezium_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/custom_view_head_layout"
+                android:layout_marginTop="-55dp"
+                android:background="@drawable/trapezium">
+
+                <LinearLayout
+                    android:id="@+id/about_coach_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/around_now_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/location"
+                                android:tint="@color/greyText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                                android:text="Santa Monica Public Library,Santa Monica"
+                                android:textColor="@color/greyText"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/around_now_layout"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="345 Caoches are ready to provide custom sessions!"
+                            android:textColor="@color/greyText"
+                            android:textSize="22sp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/create_custom_session_button"
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/trapezium_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_background_red"
+                android:text="@string/create_custom_session"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/create_custom_session_button"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/terms_and_conditions_toggle"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do Not Show This Screen Again "
+                    android:textColor="@color/greyText2"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

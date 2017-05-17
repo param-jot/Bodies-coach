@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="20dp"
+    android:background="@color/white">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/feedback_header_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorGreyBackground3"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingTop="40dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/whistle_image"-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/group"-->
+    <!--android:tint="@color/black" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/text_layout_feedback"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_toRightOf="@+id/whistle_image"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--fontPath="fonts/Titillium_Thin.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="You have not given any feedback for "-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--fontPath="fonts/Titillium_Regular.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:text="2"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--fontPath="fonts/Titillium_Thin.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:text="of the "-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--fontPath="fonts/Titillium_Regular.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:text="3"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--fontPath="fonts/Titillium_Thin.otf"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/text_layout_feedback"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_toRightOf="@id/whistle_image"-->
+    <!--android:text="sessions you have taken with this coach. "-->
+    <!--android:textColor="@color/black" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Feedback"
+        android:textAllCaps="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+        />
+    <TextView
+        android:id="@+id/asking_feedback_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_3"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+        android:paddingRight="35dp"
+        android:paddingTop="20dp"
+        android:text="Hey! How did your workout sessions go?"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:id="@+id/feedback_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jun 1,2016-8:30pm" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilates for Busy Executives"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold's Gym, Venice"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/coach_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cycling"
+                android:layout_alignParentRight="true"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGreyBackground5"/>
+
+
+    <LinearLayout
+        android:id="@+id/vote_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asking_feedback_text"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_grey"
+            android:padding="40dp"
+            android:src="@drawable/thumbs_up"
+            android:tint="@color/colorGreen" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle_grey"
+            android:padding="40dp"
+            android:src="@drawable/dislike_icon_red"
+            android:tint="@color/colorRed" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/vote_layout"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorGreyBackground7" />
+
+    <EditText
+        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_4"
+        android:layout_marginLeft="35dp"
+        android:background="@color/white"
+        android:hint="Add a comment?"
+        android:id="@+id/edit_text_comment"
+        android:paddingTop="20dp"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="160dp"
+        android:layout_below="@+id/view_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:textColor="@color/colorBlueBackground"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:tint="@color/colorGreyBackground7"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/dashboard"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/slidemenu_dashboard_icon_login"
+            android:title="Dashboard" />
+        <!--<item-->
+        <!--android:id="@+id/nav_gallery"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Activities" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Coaches" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_manage"-->
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <!--android:title="Places" />-->
+    </group>
+
+    <group android:id="@+id/activities"
+        android:checkableBehavior="none">
+        <!--<item-->
+        <!--android:id="@+id/nav_camera"-->
+        <!--android:icon="@drawable/ic_menu_camera"-->
+        <!--android:title="Dashboard" />-->
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/slidemenu_myworkout_icon_login"
+            android:title="My Workouts" />
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Coaches" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_manage"-->
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <!--android:title="Places" />-->
+    </group>
+
+    <group android:id="@+id/coaches"
+        android:checkableBehavior="none">
+        <!--<item-->
+        <!--android:id="@+id/nav_camera"-->
+        <!--android:icon="@drawable/ic_menu_camera"-->
+        <!--android:title="Dashboard" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_gallery"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Activities" />-->
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/slidemenu_ownworkout_icon_login"
+            android:title="Create Your Own Workout" />
+        <!--<item-->
+        <!--android:id="@+id/nav_manage"-->
+        <!--android:icon="@drawable/ic_menu_manage"-->
+        <!--android:title="Places" />-->
+    </group>
+
+    <group android:id="@+id/places"
+        android:checkableBehavior="none">
+        <!--<item-->
+        <!--android:id="@+id/nav_camera"-->
+        <!--android:icon="@drawable/ic_menu_camera"-->
+        <!--android:title="Dashboard" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_gallery"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Activities" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Coaches" />-->
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/slidemenu_favorites_icon_login"
+            android:title="Favorites" />
+    </group>
+
+    <group android:id="@+id/options"
+        android:checkableBehavior="none">
+        <!--<item-->
+        <!--android:id="@+id/nav_camera"-->
+        <!--android:icon="@drawable/ic_menu_camera"-->
+        <!--android:title="Dashboard" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_gallery"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Activities" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_slideshow"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Coaches" />-->
+        <item
+            android:id="@+id/workouts"
+            android:title="Transaction History" />
+
+        <item
+            android:id="@+id/create_session"
+            android:title="Manage Profile" />
+
+
+        <item
+            android:id="@+id/favorites"
+            android:title="Settings and Preferences" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="Contact Support" />
+
+
+    </group>
+
+</menu>

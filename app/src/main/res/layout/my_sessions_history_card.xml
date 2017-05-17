@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/feedback_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/feedback_number"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="3"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/feedback_number"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/Titillium_Thin.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jun 1,2016-8:30pm" />
+
+            <TextView
+                fontPath="fonts/Signika_Bold.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilates for Busy Executives"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                fontPath="fonts/Titillium_Thin.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold's Gym, Venice"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+            android:tint="@color/black" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/not_rated_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/thumbs_up"
+            android:tint="@color/colorGreen2" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/thumbs_up"
+            android:tint="@color/colorRed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Add a Comment?"
+            android:textColor="@color/colorBlueBackground"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedback_commented_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/rated_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/thumbs_up"
+            android:tint="@color/colorGreen2" />
+
+        <TextView
+            android:id="@+id/feedback_date_text"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:text="Feedback Left on June 23, 2016"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_date_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="gnnklhnrtlkgnkljngklttngkltnngkldjkllnglbjfgkbnxfmkngjkdfhfjgbdsjkfgbjksdbfgjksrbrfgbsjkjd nvjj shfiuhjiiosjkjklsannjkd jhduiwpdkmnnkjdio jkdjjklsndjkoi"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/feedback_giver_details"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Eva Keating"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New York City, NY - January 2016"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorGreyBackground5"/>
+
+</LinearLayout>

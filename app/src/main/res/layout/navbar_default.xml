@@ -1,0 +1,15 @@
+<android.support.design.widget.NavigationView android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    app:headerLayout="@layout/nav_header_navigation_drawer"
+    app:menu="@menu/activity_navigation_drawer_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/nav_footer"
+        android:layout_gravity="bottom"
+        android:layout_height="90dp"
+        android:layout_width="match_parent"/>
+</android.support.design.widget.NavigationView>

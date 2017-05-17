@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_flat2"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/white_rounded_corners"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="15dp"
+                        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                        android:paddingRight="15dp"
+                        android:paddingTop="8dp"
+                        android:text="Last 6 Months"
+                        android:textColor="@color/colorRed" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="8dp"
+                        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="8dp"
+                        android:text="All Time"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recommendation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreyBackground3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:adjustViewBounds="true"
+            android:paddingBottom="2dp"
+            android:src="@drawable/thumbs_up"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/up_vote_percentage"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:text="98%"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="Recommended"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="|"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/review_count"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="334"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="Reviews"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.malinskiy.superrecyclerview.SuperRecyclerView
+            android:id="@+id/feed_back_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_empty="@layout/emptyview"
+            app:layout_moreProgress="@layout/view_more_progress"
+            app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+            app:recyclerClipToPadding="false"
+            app:scrollbarStyle="insideInset" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/see_reviews_dialog"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:background="@color/colorButtonPink"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/snipper_icon"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:id="@+id/image_circle"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_circle"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bottom_layout"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrey2"
+                    android:textSize="14sp"
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:text="You have not given any feedback for "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:textSize="14sp"
+                    android:text="3"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_circle"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/bottom_layout"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrey2"
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:textSize="14sp"
+                    android:text="of the"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:text="5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrey2"
+                    android:textSize="14sp"
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:text="sessions with this coach."/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:tint="@color/white"
+                android:src="@drawable/ic_keyboard_arrow_right_white_24dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

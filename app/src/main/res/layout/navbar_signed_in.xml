@@ -1,0 +1,19 @@
+
+<android.support.design.widget.NavigationView android:id="@+id/nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:paddingBottom="110dp"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    app:headerLayout="@layout/nav_header_navigation_drawer_signed_in"
+    app:menu="@menu/activity_navigation_drawer_drawer_signed_in"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/nav_footer_signed_in"
+        android:layout_gravity="bottom"
+        android:layout_height="110dp"
+        android:layout_marginBottom="-110dp"
+        android:layout_width="match_parent"/>
+</android.support.design.widget.NavigationView>

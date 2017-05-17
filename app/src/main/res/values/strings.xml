@@ -1,0 +1,252 @@
+<resources>
+    <string name="app_name">Bodies.tv</string>
+    <string name="image_url">http://198.199.121.44/uploads/user/</string>
+    <string name="facebook_app_id">1758492537736962</string>
+    <string name="bodies">Bodies</string>
+    <string name="ready_for_your_workout">Ready for your</string>
+    <string name="around_you_now">Around You Now</string>
+    <string name="choose_anb_activity_to_get_started">Choosean activity to get started!</string>
+    <string name="yoga">Yoga</string>
+    <string name="google_client_id">369035636108-ncbgcgdcqs8on7pothlqrl7eknu32bnd.apps.googleusercontent.com</string>
+    <string name="pilates">Pilates</string>
+    <string name="cycling">Cycling</string>
+    <string name="zumba">Zumba</string>
+    <string name="more">More</string>
+    <string name="cancel">Cancel</string>
+    <string name="how">How</string>
+    <string name="difficult">difficult</string>
+    <string name="want">do you</string>
+    <string name="do_you">do you</string>
+    <string name="difficulty_head">want your workout session to be?</string>
+    <string name="coaches">Coaches</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermideate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="later">Later this Week</string>
+    <string name="specific_date_time">Specific Date/Time</string>
+    <string name="not_decided">Not Decided Yet</string>
+    <string name="choose">Choose</string>
+    <string name="when">when</string>
+    <string name="want_to_start_text">want to start your workout?</string>
+    <string name="next">Next</string>
+    <string name="search">Search</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="yoga_description">A Hindu spiritual and ascetic discipline consisting of breath control, simple meditation, and specific bodily postures, for general health and relaxation.</string>
+    <string name="pilates_description">A system of exercises using special apparatus, designed to improve physical strenth, flexibility, and posture, and enhance mental awareness.</string>
+    <string name="cycling_description">Great exercise that doesn\'t put any pressure on your knees while burning calories and toning up your leg muscles!</string>
+    <string name="zumba_description">An aerobic fitness programme featuring movements inspired by various styles of Latin America dance.</string>
+    <string name="all_activities">All Activities</string>
+    <string name="find">Find</string>
+    <string name="place">Place</string>
+    <string name="to_work_out">to work out</string>
+    <string name="want_more">Want More from your</string>
+    <string name="want_more_2"> fitness regimen?</string>
+    <string name="create_workout">Create Your Own Workout</string>
+    <string name="workout">workout?</string>
+    <string name="matching_coaches">Matching Coaches within</string>
+    <string name="title_activity_coach_list_maps">Map</string>
+    <string name="choose_upto_3">Choose up to three</string>
+    <string name="activities">activities</string>
+    <string name="for_your">for your</string>
+    <string name="workout_session">workout session...</string>
+    <string name="post_feedback">Post Feedback</string>
+    <string name="create_your">Create Your</string>
+    <string name="own_workout">Own Workout!</string>
+    <string name="custom_head_text_1">Your Activities, Your Schedule, Your Pace!</string>
+    <string name="custom_head_text_2">Complete freedom to choose when, where, how and with whom you want to work out.</string>
+    <string name="custom_head_text_3">Your budget as well!</string>
+    <string name="custom_head_text_4">Find hundreds of coaches and programs that fall within your budget range! Isn\'t that something?</string>
+    <string name="lets_get_started">Let\'s Get Started!</string>
+    <string name="book_appointment">Book an Appointment</string>
+    <string name="languages">Languages</string>
+
+    <string name="qualifications_affiliations"><![CDATA[Qualifications & Affiliations]]></string>
+    <string name="awards_recognitions"><![CDATA[Awards & Recognition]]></string>
+    <string name="find_coaches_description">Trainers can help you make the most of your fitness regimen. Choose from hundreds of top-rated trainers on Bodies!</string>
+    <string name="place_to_workout_description">Uber-swanky health clubs to \'down to the basics\' gym, we\'ve got it all!</string>
+    <string name="regimen_description">If you have very specific needs, tell Bodies what you would want from your workout and chances are, we\'ve got just what you want!</string>
+    <string name="leave_your_feedback">Leave Your Feedback</string>
+    <string name="title_activity_coach_details">CoachDetailsActivity</string>
+    <string name="title_activity_coach_feedback">CoachFeedbackActivity</string>
+    <string name="title_activity_leave_feedback_coach">LeaveFeedbackCoach</string>
+    <string name="create_session_now">Create Session Now!</string>
+    <string name="title_activity_select_difficulty">SelectDifficultyActivity</string>
+    <string name="title_activity_time_selector">TimeSelectorActivity</string>
+    <string name="login_head">Use any of your linked social accounts to sign in to your bodies.tv account!</string>
+    <string name="already_member">Already a member?</string>
+    <string name="login_now">Log in now</string>
+    <string name="ready_for_your_workout_2">Ready for your Workout?</string>
+    <string name="login_first_use_head">Enter your email address here to enable us to send a text message with an activation code on your phone to verify your account.</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="request_verification_code">Request Verification Code</string>
+    <string name="login_first_bottom_text">Use Facebook, Twitter or Google Login?</string>
+    <string name="alternate_login_head1">Explore our specialized apps forTrainers, Space Owners, and Marketers</string>
+    <string name="alternate_login_coach_head">Build your clientele as a fitness trainer or coach, and utilize your free time more productively.</string>
+    <string name="alternate_login_host_head">Use your free space for fitness trainers and  users to work out in. Or, if you own a fitness center and would like to integrate with the Bodies platorm, this is the edition for you!</string>
+    <string name="alternate_login_marketer_head">Designed for exceptional marketers who have a handle on the way the fitness industry works. You bring together fitness, trainers and spaces to create sessions that excite fitness seekers across the US.</string>
+    <string name="alternate_login_marketer_head2">Interested? Contact Us nowfor more details and to get your personalised invite.</string>
+    <string name="contact_us_now">Contact Us Now!</string>
+    <string name="more_activities">+ 32 More activities ...</string>
+    <string name="cant_find">Can\'t find what you\'re</string>
+    <string name="looking_for">looking for?</string>
+    <string name="title_activity_scrolling">Bodies</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="pro">Pro</string>
+    <string name="create_custom_session">Create Custom Session</string>
+    <string name="skip">Skip</string>
+    <string name="sign_up">Sign Up Now</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_alternate_edition_activty">AlternateEditionActivty</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_lets_get_started">LetsGetStarted</string>
+    <string name="get_started_text">Are you a trainer or a space owner?</string>
+    <string name="interested_marketer_edition">Interested in the Marketer Edition?</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="fill_in_the_details">Fill in the details below to have a Bodies.tv Industry Specialist get in touch!</string>
+    <string name="good_time">What would be a good time to get in touch?</string>
+    <string name="your_name">your name</string>
+    <string name="email_address">email address</string>
+    <string name="phone_number">phone number</string>
+    <string name="sign_in">Sign In</string>
+    <string name="specialized_apps_text">Specialized Apps for Specific Audiences</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="login">Login</string>
+    <string name="name">name</string>
+    <string name="password">password</string>
+    <string name="signup">Sign Up</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="request_new_pin">Request New PIN</string>
+    <string name="just_a_bit_more">Just a bit more about you we\'ll get you going with Bodies.tv</string>
+    <string name="your_phone_number">your phone number</string>
+    <string name="your_dob">your date of birth</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_register_step">RegisterStepActivity</string>
+    <string name="log_out">Log out</string>
+    <string name="signup_error_name">Enter name</string>
+    <string name="signup_error_email">Enter a valid email</string>
+    <string name="check_terms_and_conditions">Please check terms and conditions</string>
+    <string name="text_message_login">We have sent a text message on you phone %1$s. Enter the code here to login!</string>
+    <string name="specific_date_time_">Specified Date/Time...</string>
+    <string name="where">Where</string>
+    <string name="requesting_otp">Requesting for verification code.</string>
+    <string name="loading">Loading</string>
+    <string name="resend_activation_code">Resend Activation Code</string>
+    <string name="request_verification_code_new">requesting a new OTP</string>
+    <string name="welcome_user">Welcome, %1$s!</string>
+    <string name="signing_you_up">Signing you up.</string>
+    <string name="verifying_code">Verifying Code.</string>
+    <string name="choose_a_6_digit_pin">Choose a 6-digit pin</string>
+    <string name="use_the_pin_next_time">You can use this pin to log in the app next time you access the app!</string>
+    <string name="pin_heading_confirm">Re-Enter Pin</string>
+    <string name="pin_sub_heading_confirm">Enter the pin again to be sure.</string>
+    <string name="title_activity_frequency_selector">FrequencySelectorActivity</string>
+    <string name="title_activity_place_selector">PlaceSelectorActivity</string>
+    <string name="title_activity_almost_done">AlmostDoneActivity</string>
+    <string name="title_activity_custom_session_confirm">CustomSessionConfirmActivity</string>
+    <string name="walking_distance_0_5mi"><![CDATA[Walking distance <0.5mi]]></string>
+    <string name="open_location_settings">Settings</string>
+    <string name="location_disabled">Your location services are disabled.</string>
+    <string name="location_disabled_message">Turn on your Location from the Settings to help us locate you.</string>
+    <string name="Cancel">Cancel</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="washout_internet">BodiesTV cannot work without internet connection.</string>
+    <string name="go_to_settings">Go To Settings</string>
+    <string name="logging_you_in">Logging you in.</string>
+</resources>

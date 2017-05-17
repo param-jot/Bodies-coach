@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369035636108",
+    "project_id": "bodiestvtest"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369035636108:android:5067c66667c811d4",
+        "android_client_info": {
+          "package_name": "digimantra.com.bodiestv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369035636108-pukbfq0632n5jhcd6j84mj41mbha0vcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "digimantra.com.bodiestv",
+            "certificate_hash": "8759F3E3CD0762F2D7E87FBCED0B2F021511A792"
+          }
+        },
+        {
+          "client_id": "369035636108-ncbgcgdcqs8on7pothlqrl7eknu32bnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDZSgONUxQTXRI8fbrzX4UMwNzhuzR1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

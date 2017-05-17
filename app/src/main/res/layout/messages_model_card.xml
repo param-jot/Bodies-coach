@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/thumbs_up_key" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="New Proposal"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Advanced Rock'n'Roll Dance Session"
+                    android:textColor="@color/colorGreen3"
+                    android:textSize="16sp" />
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textAllCaps="true"
+                    android:text="Closed for New Proposals"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGreyBackground7"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/complete_data_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="15dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/coach_image_layout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/coach_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cycling"
+                            app:civ_border_color="#EEEEEE"
+                            app:civ_border_width="0dp"
+                            app:civ_shadow="false" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/heart_image"
+                        android:layout_toRightOf="@+id/coach_image_layout">
+
+                        <TextView
+                            android:id="@+id/coach_name_text_view"
+                            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sylvie Gullem"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/coach_name_text_view"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="true"
+                            android:paddingBottom="2dp"
+                            android:src="@drawable/thumbs_up"
+                            android:tint="@color/colorGreen3" />
+
+                        <TextView
+                            android:id="@+id/up_vote_percentage"
+                            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="bottom"
+                            android:text="98%"
+                            android:textColor="@color/colorGreen3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/city_details_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/coach_name_text_view"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/coach_city_text"
+                                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Santa Monica" />
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coach_image_layout"
+                        android:layout_toRightOf="@+id/coach_image_layout"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                            android:text="$75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                            android:text="/session"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/snipper_icon" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorGreen4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 3 More..."
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

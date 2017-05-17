@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="-120dp"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/logo_white_back"/>
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/marketer"
+        android:tint="@color/colorGreyBackground5"
+        android:layout_marginRight="-50dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/marketer"
+        android:tint="@color/colorGreyBackground5"
+        android:layout_marginLeft="-35dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"/>
+
+
+       <ScrollView
+        android:scrollbars="none"
+      android:scrollbarStyle="insideOverlay"
+android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:text="@string/interested_marketer_edition"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:text="@string/fill_in_the_details"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:tag="Name-Normal"
+            android:textColorHint="@color/colorGreyHintText"
+            android:id="@+id/contact_name"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:paddingBottom="15dp"
+            android:background="@drawable/edit_text_grey_back"
+            android:inputType="textPersonName"
+            android:hint="@string/your_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/contact_email"
+            android:textColorHint="@color/colorGreyHintText"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:paddingBottom="15dp"
+            android:background="@drawable/edit_text_grey_back"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:textColorHint="@color/colorGreyHintText"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/edit_text_grey_back"
+            android:inputType="phone"
+            android:id="@+id/contact_phone"
+            android:hint="@string/phone_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/good_time"
+            android:textSize="15sp"
+            android:gravity="center"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/open_time_picker"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_grey_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- select time -"
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/time_text_view"
+                android:textSize="16sp"
+                android:textColor="@color/colorGreyHintText"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/select_time_image"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/get_in_touch_button"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_background_red"
+            android:text="@string/get_in_touch"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/cancel_text"
+            android:layout_marginBottom="30dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

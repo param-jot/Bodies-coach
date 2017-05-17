@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_gradient"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/colorYellow2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAILY YOGA WITH RHONDA"
+            android:textColor="@color/colorGrey"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="February 08, 2016"
+                android:textColor="@color/black"
+                fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:30pm - 1:30pm"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorGreen5"
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Access to this session cannot be purchased online!"
+            android:textColor="@color/colorTextRed"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please contact the facility directly to book your session!"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:textSize="12sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorGreyBackground7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:textSize="16sp"
+            android:text="Gold's Gym"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:textSize="16sp"
+            android:text="360 Hampton Dr, Venice, CA 90291"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:text="Tel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:textSize="16sp"
+                android:text="(310) 392-6004"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:textSize="16sp"
+                android:text="Email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="JSuender@goldsgym.com"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:id="@+id/map_fragment_holder"></RelativeLayout>
+
+
+</LinearLayout>
+
+

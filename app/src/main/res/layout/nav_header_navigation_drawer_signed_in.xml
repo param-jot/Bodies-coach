@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:id="@+id/layout_nav_1"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/gradient_dashboard_diagonal">
+
+        <RelativeLayout
+            android:id="@+id/coach_image_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/splash_logo_man"
+                app:civ_border_color="@android:color/transparent"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false" />
+
+
+            <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                <!--android:id="@+id/social_image"-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:src="@drawable/twitter_small"-->
+                <!--app:civ_border_color="@android:color/transparent"-->
+                <!--app:civ_border_width="1dp"-->
+                <!--app:civ_shadow="false" />-->
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/user_nav_name"
+                android:textColor="@color/white"
+                fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                android:text="Tom Kazansky"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/location"
+                    android:tint="@color/textBluish"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:id="@+id/location_string"
+                    android:textColor="@color/textBluish"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginTop="-60dp"
+        android:id="@+id/layout_nav_2"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="-2dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/layout_nav_1"
+        android:background="@drawable/white_triangle_3"
+        android:layout_above="@+id/sign_up_button" />
+
+
+</RelativeLayout>

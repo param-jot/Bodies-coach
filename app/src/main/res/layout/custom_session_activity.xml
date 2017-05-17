@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_button"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/activity_choose_head"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/gradient_flat3"
+                android:paddingBottom="15dp"
+                android:paddingTop="?attr/actionBarSize"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/choose_upto_text"
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/choose_upto_3"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/activity_text_first_half"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choose_upto_text"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activities"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/for_your"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_text_first_half"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-5dp"
+                    android:text="@string/workout_session"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_choose_head"
+                android:background="@color/colorGreyBackground"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <EditText
+                    fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_rectangular_background_grey_border"
+                    android:gravity="center"
+                    android:hint="@string/search"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/most_popular_text_view"
+                    fontPath="fonts/Signika-Bold.otf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/most_popular"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <!--<com.malinskiy.superrecyclerview.SuperRecyclerView-->
+                <!--android:id="@+id/activity_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:elevation="0dp"-->
+                <!--app:layout_empty="@layout/emptyview"-->
+                <!--app:layout_moreProgress="@layout/view_more_progress"-->
+                <!--app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"-->
+                <!--app:recyclerClipToPadding="false"-->
+                <!--app:scrollbarStyle="insideInset" />-->
+
+                <include layout="@layout/choose_activity_card_1" />
+
+                <include layout="@layout/choose_activity_card_1" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorViewBackground"
+                    android:elevation="5dp" />
+
+                <TextView
+                    android:id="@+id/all_activities_text"
+                    fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/activity_list_all"
+                    android:background="@color/colorGreyBackground2"
+                    android:elevation="0dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/all_activities"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <!--<com.malinskiy.superrecyclerview.SuperRecyclerView-->
+                <!--android:id="@+id/activity_list_all"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginBottom="50dp"-->
+                <!--app:layout_empty="@layout/emptyview"-->
+                <!--app:layout_moreProgress="@layout/view_more_progress"-->
+                <!--app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"-->
+                <!--app:recyclerClipToPadding="false"-->
+                <!--app:scrollbarStyle="insideInset" />-->
+
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+                <include layout="@layout/choose_activity_card_2" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/next_button"
+        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorButtonPink"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <include layout="@layout/toolbar" />
+
+</RelativeLayout>

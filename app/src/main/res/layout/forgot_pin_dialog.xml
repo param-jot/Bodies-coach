@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/noun_502112_cc"
+        android:tint="@color/colorBlueBackground" />
+
+
+    <TextView
+        fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter PIN to Login"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <me.philio.pinentry.PinEntryView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:digitBackground="@drawable/edit_text_grey_back"
+            app:digitSpacing="10dp"
+            app:numDigits="6"
+            app:pinInputType="number" />
+
+
+    </LinearLayout>
+
+    <TextView
+        fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Forgot PIN?"
+        android:textColor="@color/colorBlueBackground"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyBackground7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreyBackground2"
+        android:orientation="horizontal">
+
+        <fragment
+            android:name="digimantra.com.bodiestv.ui.authentication.FacebookLoginFragment"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:tag="facebook_login_frag"
+            tools:layout="@layout/fragment_facebook_login" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGreyBackground7" />
+
+        <fragment
+            android:name="digimantra.com.bodiestv.ui.authentication.GoogleLoginFragment"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:tag="google_login_frag"
+            tools:layout="@layout/fragment_google_login" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGreyBackground7" />
+
+
+        <ImageView
+            android:id="@+id/twitter_login"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:padding="35dp"
+            android:src="@drawable/twitter_small" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGreyBackground7" />
+
+    <TextView
+        fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/colorBlueBackground"
+        android:textSize="17sp" />
+
+</LinearLayout>

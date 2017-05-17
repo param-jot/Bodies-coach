@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/man_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splash_logo_man" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/login_icons_layout"
+        android:layout_marginTop="-20dp"
+        android:layout_below="@+id/man_logo"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_up_black_48dp"
+            android:tint="@color/colorGreyBackground7"
+            android:clickable="true"
+            android:id="@+id/close_social_login"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/login_head"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:tag="facebook_login_frag"
+                android:id="@+id/facebook_fragment_container"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                 />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorGreyBackground7"/>
+
+            <fragment
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:tag="google_login_frag"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:name="digimantra.com.bodiestv.ui.authentication.GoogleLoginFragment"
+                tools:layout="@layout/fragment_google_login" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorGreyBackground7"/>
+
+
+            <fragment
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:tag="twitter_login_frag"
+                android:layout_weight="1"
+
+                android:adjustViewBounds="true"
+                android:name="digimantra.com.bodiestv.ui.authentication.TwitterLoginFragment"
+                tools:layout="@layout/twiter_login_fragment" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_white_back" />
+
+
+</RelativeLayout>

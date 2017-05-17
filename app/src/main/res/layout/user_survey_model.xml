@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Feedback"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            />
+        <TextView
+            android:id="@+id/asking_feedback_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:paddingRight="35dp"
+            android:paddingTop="40dp"
+            android:text="Can you spare a moment?"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:layout_marginBottom="120dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:paddingRight="35dp"
+            android:paddingTop="0dp"
+            android:text="Tell us what do you think of the Bodies app?"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/blue_cut_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_3"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+        android:paddingRight="35dp"
+        android:paddingTop="40dp"
+        android:layout_marginTop="30dp"
+        android:text="It's Awesome!"
+        android:textColor="@color/colorTextRed"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_3"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+        android:paddingRight="35dp"
+        android:paddingTop="40dp"
+        android:text="Not what I expected"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+
+
+</LinearLayout>

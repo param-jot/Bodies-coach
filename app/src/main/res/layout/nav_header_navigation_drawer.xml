@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="235dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:id="@+id/layout_nav_1"
+        android:paddingBottom="60dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/gradient_dashboard_diagonal">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/logo"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:textColor="@color/white"
+                fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+                android:text="Bodies"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:textColor="@color/textBluish"
+                fontPath="fonts/System_San_Francisco_Display_Ultralight.ttf"
+                android:text=".tv"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up for a FREE Membership"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+            android:text="Create custom sessions, save your "
+            android:textColor="@color/textBluish"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+            android:text="preferences, and stay on the top of your game."
+            android:textColor="@color/textBluish"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+            android:text="Sign up using your email or social accounts!"
+            android:textColor="@color/textBluish"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_nav_2"
+        android:paddingLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="15dp"
+        android:background="@drawable/white_triangle_3"
+        />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/layout_nav_1"
+        android:background="@drawable/button_background_red2"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

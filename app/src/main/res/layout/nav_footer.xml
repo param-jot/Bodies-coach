@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/trap_footer"
+    android:gravity="bottom"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_member"
+            android:textColor="@color/colorTextRed"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sign_in_now"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+
+            android:text="@string/sign_in"
+            android:textColor="@color/colorTextRed"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

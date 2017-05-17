@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/top_background_layout"
+        android:background="@drawable/top_backround">
+
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_white_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <RelativeLayout
+            android:id="@+id/coach_image_layout"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/splash_logo_man"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false" />
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/social_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/twitter_small"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="1dp"
+                app:civ_shadow="false" />
+
+            <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                <!--android:id="@+id/coach_verified_image"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:src="@drawable/noun_18093_cc"-->
+                <!--android:tint="@color/colorGreen2" />-->
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            fontPath="fonts/System_San_Francisco_Display_Bold.ttf"
+            android:text="@string/interested_marketer_edition"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:text="@string/fill_in_the_details"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_marginTop="50dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:paddingBottom="15dp"
+            android:background="@drawable/edit_text_grey_back"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            fontPath="fonts/System_San_Francisco_Display_Regular.ttf"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/edit_text_grey_back"
+            android:inputType="phone"
+            android:hint="@string/phone_number"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/next_button"
+            fontPath="fonts/System_San_Francisco_Display_Thin.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_background_red"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

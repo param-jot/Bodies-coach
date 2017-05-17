@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="digimantra.com.bodiestv">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CommonClasses.BodiesTv"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".ui.onboard.SplashScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.customworkout.DifficultyChooseActivity"
+            android:parentActivityName=".ui.customworkout.ChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.customworkout.ChooseActivity" />
+        </activity>
+        <activity
+            android:name=".ui.customworkout.ChooseActivity"
+            android:parentActivityName=".ui.customworkout.CustomView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.customworkout.CustomView" />
+        </activity>
+        <activity
+            android:name=".ui.customworkout.WhenStart"
+            android:parentActivityName=".ui.customworkout.DifficultyChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.customworkout.DifficultyChooseActivity" />
+        </activity>
+
+        <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true"
+            android:xlargeScreens="true" />
+
+        <activity
+            android:name=".CoachListing"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.coachlist.ListMapsActivity"
+            android:label="@string/title_activity_coach_list_maps"
+            android:parentActivityName=".ui.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.dashboard.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".Adapters.ListActivitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.customworkout.CustomView"
+            android:parentActivityName=".ui.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.dashboard.DashboardActivity" />
+        </activity>
+        <activity
+            android:name=".ui.coachdetails.CoachDetailsActivity"
+            android:label="@string/title_activity_coach_details"
+            android:parentActivityName=".ui.coachlist.ListMapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.coachlist.ListMapsActivity" />
+        </activity>
+        <activity
+            android:name=".Adapters.CoachFeedbackActivity"
+            android:label="@string/title_activity_coach_feedback"
+            android:parentActivityName=".ui.coachdetails.CoachDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.coachdetails.CoachDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.coachdetails.LeaveFeedbackCoach"
+            android:label="@string/title_activity_leave_feedback_coach"
+            android:parentActivityName=".Adapters.CoachFeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="digimantra.com.bodiestv.Adapters.CoachFeedbackActivity" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.authentication.SocialLoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.onboard.AlternateEditionActivty"
+            android:label="@string/title_activity_alternate_edition_activty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.authentication.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".ui.onboard.LetsGetStarted"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.customworkout.ChooseActivityNew" />
+        <activity
+            android:name=".ui.onboard.LetsGetStarted"
+            android:label="@string/title_activity_lets_get_started"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.onboard.ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:parentActivityName=".ui.onboard.AlternateEditionActivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.onboard.AlternateEditionActivty" />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c19b95b9ef788dd6c9bda5aac80247287d3d4df8" />
+
+        <activity
+            android:name=".ui.authentication.ActivationCodeVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.setpin.LoginModel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setpin.SetPin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.signup.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.signup.RegisterStepActivity"
+            android:label="@string/title_activity_register_step"
+            android:parentActivityName=".ui.signup.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.signup.SignupActivity" />
+        </activity>
+        <activity
+            android:name=".ui.signup.LocationSearch"
+            android:parentActivityName=".ui.signup.RegisterStepActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.signup.RegisterStepActivity" />
+        </activity>
+        />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ui.customworkout.FrequencySelectorActivity"
+            android:label="@string/title_activity_frequency_selector"
+            android:parentActivityName=".ui.customworkout.WhenStart"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="digimantra.com.bodiestv.ui.customworkout.WhenStart" />
+        </activity>
+        <activity
+            android:name=".ui.customworkout.PlaceSelectorActivity"
+            android:label="@string/title_activity_place_selector"
+            android:parentActivityName=".ui.customworkout.FrequencySelectorActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="digimantra.com.bodiestv.ui.customworkout.FrequencySelectorActivity" />
+        </activity>
+        <activity
+            android:name=".ui.customworkout.ReviewDetailsActivity"
+            android:label="@string/title_activity_almost_done"
+            android:parentActivityName=".ui.customworkout.PlaceSelectorActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="digimantra.com.bodiestv.ui.customworkout.PlaceSelectorActivity" />
+        </activity>
+        <activity
+            android:name=".ui.customworkout.CustomSessionConfirmActivity"
+            android:label="@string/title_activity_custom_session_confirm"
+            android:parentActivityName=".ui.customworkout.ReviewDetailsActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="digimantra.com.bodiestv.ui.customworkout.ReviewDetailsActivity" />
+        </activity>
+    </application>
+
+</manifest>
